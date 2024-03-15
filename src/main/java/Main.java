@@ -11,6 +11,7 @@ public class Main {
 
     public void run() {
         myService.doSomething();
+        myService.getResourceName();
     }
 
     public static void main(String[] args) {
