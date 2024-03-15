@@ -1,5 +1,5 @@
 import javax.inject.Singleton;
-import javax.annotation.Resource;
+import javax.annotation.Generated;
 
 @Singleton
 public class MyServiceImpl implements MyService {
@@ -9,7 +9,7 @@ public class MyServiceImpl implements MyService {
     }
 
     @Override
-    @Resource
+    @Generated("MyServiceImpl")
     public String getResourceName() {
         return "ExampleResource";
     }

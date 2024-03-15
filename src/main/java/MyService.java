@@ -1,9 +1,9 @@
-import javax.annotation.Resource;
+import javax.annotation.Generated;
 
 public interface MyService {
     void doSomething();
 
-    @Resource
+    @Generated("MyService")
     String getResourceName();
 }
 
