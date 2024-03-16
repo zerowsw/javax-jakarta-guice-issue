@@ -1,17 +1,21 @@
+import javax.inject.Inject;
+import javax.inject.Named;
 import javax.inject.Singleton;
-import javax.annotation.Generated;
 
 @Singleton
 public class MyServiceImpl implements MyService {
+    @Inject
+    @Named("Test")
+    private String privateValue;
+
     @Override
     public void doSomething() {
         System.out.println("Doing something...");
     }
 
     @Override
-    @Generated("MyServiceImpl")
     public String getResourceName() {
-        return "ExampleResource";
+        return privateValue;
     }
 }
 

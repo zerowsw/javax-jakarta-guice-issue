@@ -9,9 +9,8 @@ public class Main {
         this.myService = myService;
     }
 
-    public void run() {
-        myService.doSomething();
-        myService.getResourceName();
+    public String run() {
+        return myService.getResourceName();
     }
 
     public static void main(String[] args) {
