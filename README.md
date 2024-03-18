@@ -4,10 +4,6 @@
 
 This sample project demonstrates a potential issue that may arise when migrating from Javax annotations to Jakarta annotations using OpenRewrite, particularly in conjunction with a lower version of a dependency injection framework like Guice. The issue arises due to the lack of support for Jakarta annotations in older versions of Guice, leading to potential failures or errors in the application.
 
-## Purpose
-
-The purpose of this project is to showcase a real-world scenario where changing source code using the OpenRewrite `JavaxMigrationToJakarta` recipe can cause issues, specifically when the application relies on a dependency injection framework like Guice that does not support Jakarta annotations.
-
 ## Problem Statement
 
 When migrating from Javax annotations to Jakarta annotations using tools like OpenRewrite, it's essential to consider the compatibility with other frameworks and libraries used in the application. In this case, older versions of Guice may not support Jakarta annotations, leading to compilation errors or runtime failures when Jakarta annotations are introduced into the codebase.
